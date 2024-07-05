@@ -1,9 +1,12 @@
 import kivy
+from kivy.app import App
+from kivy.uix.label import Label
 
+kivy.require('1.9.0')
 
-def main():
-    pass
+class SubGrid(App):
+    def build(self):
+        return Label(text = 'SubGrid')
 
-
-if __name__ == '__main__':
-    main()
+subGrid = SubGrid()
+subGrid.run()
